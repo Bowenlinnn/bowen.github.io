@@ -1,0 +1,25 @@
+{
+  "name": "cs352_merkent_lms",
+  "version": "1.0.0",
+  "description": "Repo for code by students in CS352 F2020 class. Group - Merkent, project - Library Management System",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kedar-damle/CS352_Merkent_LMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kedar-damle/CS352_Merkent_LMS/issues"
+  },
+  "homepage": "https://github.com/kedar-damle/CS352_Merkent_LMS#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "forever": "^3.0.2",
+    "morgan": "^1.10.0"
+  }
+}

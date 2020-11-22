@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Database Operations</title>
+  <meta name="description" content="Library Management System - Database Operations">
+  <meta name="author" content="Kedar Damle <damlek@oregonstate.edu>">
+
+  <style>
+  .action-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+  }
+
+  .action-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+  }
+ 
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="button_bg" style="margin: auto; cursor: pointer;" onclick="window.location.href='admin_home.html'">
+    <img src="back.png" width="25px" style="background-color: transparent; float:left; margin-right: 25px;"></img>
+    <span class="my_link">Back</span>
+  </div>
+  
+  <div class="page-container">
+    <span class="title">Database Operations</span>
+    <hr>
+    
+    <div class="db-action-container">
+      <img src="db_backup.png" height="80px" style="float:left; margin-right: 25px;"></img>
+      <span class="button_bg" style="width:250px">
+        <a href="db_backup.sql" download style="color: grey; text-decoration: none; ">Backup</a>
+      </span>
+    </div>
+    
+    <div class="db-action-container">
+      <img src="db_restore.png" height="80px" style="float:left; margin-right: 25px;"></img>
+      <span class="button_bg" style="width:250px">
+        <label for="myfile">Restore</label><br>
+        <input type="file" id="myfile" name="myfile" style="float:left;">
+        <!-- <a href="restore_db.html" style="color: #ff4500">Restore</a> -->
+      </span>
+    </div>
+    
+    <div class="db-action-container">
+      <img src="db_reset.png" height="80px" style="float:left; margin-right: 25px;"></img>
+      <div class="button_bg" style="width:250px">      
+        <span class="my_link" onclick="document.getElementById('id01').style.display='block'">Reset</span>
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
+          <div class="container">
+            <h1>Reset database</h1>
+            <p>Are you sure you want to reset the database?</p>
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none';" class="cancelbtn">No</button>
+              <button type="button" onclick="document.getElementById('id01').style.display='none'; window.location.href='admin_home.html'" class="deletebtn">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <a href="edit_template.html">EDIT WEBSITE <br>TEMPLATE</a>
+      <a href="db_ops.html" class="active">DATABASE <br> OPERATIONS</a>
+      <a href="staff_acct_mgmt.html">STAFF ACCOUNT <br> MANAGEMENT</a>
+    </div>
+  </div>
+</body>
+
+</html>

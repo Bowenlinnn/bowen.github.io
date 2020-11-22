@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Edit Website Template Interface</title>
+    <meta name="description" content="Library Management System - Edit website template Interface">
+    <meta name="author" content="Kedar Damle <damlek@oregonstate.edu>">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="button_bg" style="margin: auto; cursor: pointer;" onclick="window.location.href='admin_home.html'">
+    <img src="back.png" width="25px" style="background-color: transparent; float:left; margin-right: 25px;"></img>
+    <span class="my_link">Back</span>
+  </div>
+
+  <div class="page-container">
+    <span class="title">Edit Website Template</span>
+    <hr>
+    
+    <div class="form-container">
+      <span class="label-text">Name </span>
+      <input type="text" size="50">
+    </div>
+    
+    <div class="form-container">
+      <span class="label-text">Logo Image</span><br>
+      <input type="file" id="myfile" name="myfile">
+    </div>
+    
+    <div class="form-container">
+      <span class="label-text">Description</span><br>
+      <textarea rows="10" cols="80"></textarea>
+    </div>
+    
+    <div>
+      <div class="button_bg" onclick="window.location.href='admin_home.html'">
+        <span class="my_link">Cancel</span>
+      </div>
+      
+      <div class="button_bg">
+        <span class="my_link" onclick="document.getElementById('id01').style.display='block'">Update</span>
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+          <div class="container">
+            <h1>Update website</h1>
+            <p>Are you sure you want to update the website?</p>
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none';" class="cancelbtn">No</button>
+              <button type="button" onclick="document.getElementById('id01').style.display='none'; window.location.href='admin_home.html'" class="deletebtn">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <a href="edit_template.html" class="active">EDIT WEBSITE <br>TEMPLATE</a>
+      <a href="db_ops.html">DATABASE <br> OPERATIONS</a>
+      <a href="staff_acct_mgmt.html">STAFF ACCOUNT <br> MANAGEMENT</a>
+    </div>
+
+  </div>
+</body>
+
+</html>

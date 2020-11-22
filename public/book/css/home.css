@@ -1,0 +1,80 @@
+.home-flex-item {
+    display: inline-block;
+    width: 46%;
+    border: 1px solid #888;
+    text-align: center;
+    padding: 50px 0px;
+    margin-right: 2%;
+    cursor: pointer;
+    /* margin-bottom: 12px; */
+}
+
+ul li {
+    list-style: circle;
+}
+
+.zySearch .search-input {
+    color: #999;
+    border: 1px solid #D0D0D0;
+    height: 33px;
+    line-height: 33px;
+    margin-right: 5px;
+    padding: 0 10px;
+    width: 268px;
+}
+
+.zySearch .search-btn {
+    background: none repeat scroll 0 0 #F04243;
+    border: 0 none;
+    border-radius: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 35px;
+    line-height: 33px;
+    padding: 0;
+    vertical-align: baseline !important;
+    width: 76px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+}
+
+/* //登录弹窗 */
+.box_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0.8;
+}
+
+.box_lg,.box_lg2 {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 300px;
+    margin-left: -250px;
+    margin-top: -150px;
+    border: 1px solid #888;
+    background-color: #fff;
+    text-align: center;
+}
+
+ol li {
+    list-style: none;
+}
+
+.ipt {
+    padding: 12px;
+    margin-bottom: 12px;
+}

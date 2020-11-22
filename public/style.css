@@ -1,0 +1,226 @@
+.page-container {
+    margin: auto;
+    width: 500px;
+    padding: 20px;
+}
+.welcome-container {
+    padding: 20px; 
+    height: 100px;
+}
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #ff4500;
+    text-decoration: bold;
+}
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.icon {
+    width: 25%;
+    color: #226699;
+    font-size:80px;
+}
+
+.form-container {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+input {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.username {
+    float: left;
+    font-size:35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: grey;
+}
+
+.button_bg {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: grey;
+    padding: 18px;
+    float: left;
+    border-radius: 15px;
+    border: 2px solid grey;
+    margin: 5px;
+}
+
+.button_bg:hover {
+    background: Silver;
+}
+
+.my_link {
+    cursor: pointer;
+}
+
+.button_s {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid grey;
+    width: 100px;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+}
+
+.button_s:hover {
+    background: Silver;
+    cursor: pointer;
+}
+
+.label-text {
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: grey;
+}
+
+.db-action-container {
+    padding: 20px; 
+    height: 100px;
+}
+
+.field_set {
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.field_label {
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+/* The Modal (background) */
+ .modal {
+     display: none;
+    /* Hidden by default */
+     position: fixed;
+    /* Stay in place */
+     z-index: 1;
+    /* Sit on top */
+     left: 0;
+     top: 0;
+     width: 100%;
+    /* Full width */
+     height: 100%;
+    /* Full height */
+     overflow: auto;
+    /* Enable scroll if needed */
+     background-color: #474e5d;
+     padding-top: 50px;
+}
+/* Modal Content/Box */
+ .modal-content {
+     background-color: #fefefe;
+     margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+     border: 1px solid #888;
+     width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+/* Style the horizontal ruler */
+ hr {
+     border: 1px solid #f1f1f1;
+     margin-bottom: 25px;
+}
+/* Set a style for all buttons */
+ button {
+     background-color: #4CAF50;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 20%;
+     opacity: 0.9;
+}
+ button:hover {
+     opacity:1;
+}
+/* Float cancel and delete buttons and add an equal width */
+ .cancelbtn, .deletebtn {
+     float: left;
+     width: 50%;
+}
+/* Add a color to the cancel button */
+ .cancelbtn {
+     background-color: #ccc;
+     color: black;
+}
+/* Add a color to the delete button */
+ .deletebtn {
+     background-color: #f44336;
+}
+/* Add padding and center-align text to the container */
+ .container {
+     padding: 16px;
+     text-align: center;
+}
+/* The Modal Close Button (x) */
+ .close {
+     position: absolute;
+     right: 35px;
+     top: 15px;
+     font-size: 40px;
+     font-weight: bold;
+     color: #f1f1f1;
+}
+ .close:hover, .close:focus {
+     color: #f44336;
+     cursor: pointer;
+}
+/* Clear floats */
+ .clearfix::after {
+     content: "";
+     clear: both;
+     display: table;
+}
+ .navbar {
+     overflow: hidden;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+}
+/* Style the links inside the navigation bar */
+ .navbar a {
+     float: left;
+     display: block;
+     text-align: center;
+     padding: 20px;
+     text-decoration: underline;
+     font-size: 20px;
+     color: #ff4500;
+     height: 40px;
+     border: 2px solid black;
+}
+/* Change the color of links on hover */
+ .navbar a:hover {
+     color: black;
+}
+/* Add a color to the active/current link */
+ .navbar a.active {
+     background-color: grey;
+     color: white;
+}
+

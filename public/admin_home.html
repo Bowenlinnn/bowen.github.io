@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Admin Interface</title>
+  <meta name="description" content="Library Management System - Admin Interface">
+  <meta name="author" content="Kedar Damle <damlek@oregonstate.edu>">
+
+  <style>
+
+  .action-container {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+    height: 100px;
+  }
+  .action-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+  }
+
+  .action-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+  }
+  </style>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="page-container">
+    <div class="welcome-container">
+      <div>
+        <div class="username">
+          Welcom John Doe<br>
+          <a href="edit_profile.html" style="color: grey; font-size:20px">Edit Profile</a>
+          <span style="font-size:20px; padding-left: 4em">admin01</span>
+        </div>
+        <img src="admin_profile.png" height="80px" style="float:left; margin-left: 25px;"></img>
+      </div>
+    </div>
+    <hr>
+    <div class="action-container">
+      <img src="admin_edit.png" height="80px" style="float:left; margin-right: 25px;"></img>
+      <span class="action-text"><a href="edit_template.html" style="color: #ff4500">Edit Website Template</a></span>
+    </div>
+    <br>
+    <div class="action-container">
+      <img src="admin_db.png" height="80px" style="float:left; margin-right: 25px;"></img>
+      <span class="action-text"><a href="db_ops.html" style="color: #ff4500">Database operations</a></span>
+    </div>
+    <br>
+    <div class="action-container">
+      <img src="admin_staff.png" height="80px" style="float:left; margin-right: 25px;"></img>
+      <span class="action-text"><a href="staff_acct_mgmt.html" style="color: #ff4500;">Staff Account Management</a></span>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./../style.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <!-- <div class="button_bg" style="margin: auto; cursor: pointer;" onclick="window.location.href='admin_home.html'">
+        <img src="back.png" width="25px" style="background-color: transparent; float:left; margin-right: 25px;"></img>
+        <span class="my_link">Back</span>
+    </div> -->
+
+    <div class="page-container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-item"><img src="./images/1.png" alt="banner" /></div>
+                <div class="swiper-item"><img src="./images/2.png" alt="banner" /></div>
+                <div class="swiper-item"><img src="./images/3.png" alt="banner" /></div>
+            </div>
+        </div>
+
+        <div style="text-align: center;margin:24px auto">
+            <span class="zySearch" id="zySearch">
+                <input id="searchInput" class="search-input" type="text" placeholder="Search Book"><button
+                    class="search-btn btn" onclick="window.open('./search.html')">Search</button>
+            </span>
+        </div>
+
+        <div style="display: flex;flex-flow: row;">
+            <div style="flex:1">
+                <div class="week-rec-wrap fl" data-l1="4">
+                    <h3 class="lang">Book List</h3>
+                    <div class="rec-list">
+                        <ul>
+                            <li data-rid="1"><em><a href="">book1</a></li>
+                            <li data-rid="2"><em><a href="">book2</a></li>
+                            <li data-rid="3"><em><a href="">book3</a></li>
+                            <li data-rid="4"><em><a href="">book4</a></li>
+                            <li data-rid="5"><em><a href="">book5</a></li>
+                            <!-- <li data-rid="6"><em><a href="" >Protect our patriarch</a></li>
+                            <li data-rid="7"><em><a href="" >Ten square guanyu</a></li>
+                            <li data-rid="8"><em><a href="" >My disciples all have hidden identities</a></li>
+                            <li data-rid="9"><em><a href="" >The ruler of boxing</a></li>
+                            <li data-rid="10"><em><a href="" >Deep ocean champ</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="flex:1;margin-top:24px">
+                <div class="home-flex-item btn_click">Login</div>
+                <div class="home-flex-item">contact</div>
+                <div class="home-flex-item btn_click2">category</div>
+                <div class="home-flex-item">Library History</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box_bg"></div>
+    <div class="box_lg2">
+        <div class="rec-list">
+            <ul>
+                <li data-rid="1"><em><a href="./Books.html">Books</a></li>
+                <li data-rid="2"><em><a href="./NewsPaper.html">NewsPaper</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="box_lg">
+        <div class="box_tit">
+            <a class="close" href="#" style="text-decoration: none;color:red">×</a>
+            <h3>Login</h3>
+        </div>
+
+        <div class="box_cont">
+            <form class="box_frm" action="">
+                <ol>
+                    <li><input type="text" class="ipt" placeholder="ID" /></li>
+                    <li><input type="text" class="ipt" placeholder="Password" /></li>
+                    <li><button class="search-btn btn">Login</button></li>
+                </ol>
+            </form>
+        </div>
+        <div class="box_ft">
+            <div> <a href="#">Forget ID or Password</a></div>
+            <div><a href="#">Rrgister</a></div>
+        </div>
+    </div>
+</body>
+
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script>
+    $(".swiper-container").carousel({
+        width: 500,
+        height: 300,
+        speed: 3e3,
+        needPrevAndNextBtnGroup: true,
+        needPagination: true
+    });
+
+    $(document).ready(function () {
+        $(".btn_click").click(function () {
+            console.log("点击了login")
+            $(".box_bg").fadeIn(100);
+            $(".box_lg").css("display", "block");
+        });
+        $(".btn_click2").click(function () {
+            console.log("点击了list")
+            $(".box_bg").fadeIn(100);
+            $(".box_lg2").css("display", "block");
+        });
+        $(".close").click(function () {
+            console.log("点击了close")
+            $(".box_bg").fadeOut(100);
+            $(".box_lg").css("display", "none")
+            $(".box_lg2").css("display", "none");
+        })
+    });  
+</script>
+
+</html>

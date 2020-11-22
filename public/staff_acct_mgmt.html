@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Staff Account Management</title>
+    <meta name="description" content="Library Management System - Staff Account Management Interface">
+    <meta name="author" content="Kedar Damle <damlek@oregonstate.edu>">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="button_bg" style="margin: auto; cursor: pointer;" onclick="window.location.href='admin_home.html'">
+    <img src="back.png" width="25px" style="background-color: transparent; float:left; margin-right: 25px;"></img>
+    <span class="my_link">Back</span>
+  </div>
+
+  <div class="page-container">
+    <span class="title">Staff Account Management</span>
+    <hr>
+    
+    <div class="field_set">
+      <div class="field_label">
+        Create Staff Account
+      </div>
+
+      <div class="form-container">
+        <span class="label-text">Username</span>
+        <input type="text" size="25">
+      </div>
+      
+      <div class="form-container">
+        <span class="label-text">Password</span>
+        <input type="password" size="25">
+      </div>
+
+      <div class="form-container">
+        <span class="label-text">Confirm <br> Password</span>
+        <input type="password" size="25">
+      </div>
+      
+      <div class="form-container">
+        <div class="button_s" onclick="window.location.href='admin_home.html'">
+          Cancel
+        </div>
+        
+        <div class="button_s" onclick="document.getElementById('id01').style.display='block'">
+          Create
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+            <div class="container">
+              <h1>Create Staff Account</h1>
+              <p>Are you sure you want to create the account?</p>
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'; window.location.href='staff_acct_mgmt.html'" class="cancelbtn">No</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'; window.location.href='admin_home.html'" class="deletebtn">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <br><br>
+    </div>
+    
+    <hr>
+    
+    <div class="field_set">
+      <div class="field_label">
+        Delete Staff Account
+      </div>
+
+      <div class="form-container">
+        <span class="label-text">Username</span>
+          <select>
+            <option>Kevin</option>
+            <option>Jane</option>
+            <option>Martha</option>
+            <option>Mike</option>
+          </select>
+      </div>
+      
+      <div class="form-container">
+        <div class="button_s" onclick="window.location.href='admin_home.html'">
+          Cancel
+        </div>
+        
+        <div class="button_s" onclick="document.getElementById('id02').style.display='block'">
+          Delete
+          <div id="id02" class="modal">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+            <div class="container">
+              <h1>Delete Staff Account</h1>
+              <p>Are you sure you want to delete the account?</p>
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'; window.location.href='staff_acct_mgmt.html'" class="cancelbtn">No</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'; window.location.href='admin_home.html'" class="deletebtn">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <br><br>
+    </div>
+
+    <div class="navbar">
+      <a href="edit_template.html">EDIT WEBSITE <br>TEMPLATE</a>
+      <a href="db_ops.html">DATABASE <br> OPERATIONS</a>
+      <a href="staff_acct_mgmt.html" class="active">STAFF ACCOUNT <br> MANAGEMENT</a>
+    </div>
+
+  </div>
+</body>
+
+</html>
